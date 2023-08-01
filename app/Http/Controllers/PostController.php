@@ -32,6 +32,7 @@ class PostController extends Controller
     {
         //
         $post = new Post;
+        $post->filter = $request->filter;
         $post->title = $request->title;
         $post->body = $request->body;
         if($request->hasFile('image')){

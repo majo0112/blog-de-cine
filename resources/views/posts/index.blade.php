@@ -40,6 +40,13 @@
                                     <p class="text-base leading-relaxed text-gray-500 dark:text-gray-400">
                                         Vamos a crear un nuevo post para nuestro blog. Rellena en los campos y pulsa en "crear".
                                     </p>
+                                    <label for="filter" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Categoría:</label>
+                                        <select name="filter" id="filter" class="rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50">
+                                            <option disabled selected value>(Selecciona una opción)</option>
+                                            <option value="Películas">Películas</option>
+                                            <option value="Estrenos">Estrenos</option>
+                                            <option value="Series">Series</option>
+                                        </select>
                                     <label for="title" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Título</label>
                                     <input type="text" name="title" id="title" class="block w-full p-2 text-gray-900 border border-gray-300 rounded-lg bg-gray-50 sm:text-xs focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
                                     <label for="body" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Body</label>
