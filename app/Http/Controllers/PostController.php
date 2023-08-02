@@ -41,11 +41,13 @@ class PostController extends Controller
             $nuevo_path = str_replace('public/', '', $path);
             $post->image_url = $nuevo_path;
         }
+
+        $post->user_id = auth()->user()->id;
         $post->save();
-        return redirect()->route('posts.index');
+        return redirect()->route('posts.index',  $post->id);
 
     }
-
+    
     /**
      * Display the specified resource.
      * 
