@@ -31,6 +31,8 @@ Route::get('register', function () {
     return view('register');
 })->name ('register');
 
+Route::get('/cargar-mas-posts', 'App\Http\Controllers\PostController@cargarMasPosts');
+
 
 //RUTAS PRIVADAS
 
@@ -50,3 +52,4 @@ Route::post('/posts',[PostController::class,'store'])->name('posts.store');
 Route::get('/posts/delete/{id}',[PostController::class,'destroy'])->name('posts.delete');
 
 require __DIR__.'/auth.php';
+

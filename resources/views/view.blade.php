@@ -3,8 +3,8 @@
 @section('content')
     <div class="max-w-4xl mx-auto px-4 sm:px-6 md:px-8">
         <div class="py-8">
-            <div class="bg-white dark:bg-gray-900 rounded-lg shadow-lg overflow-hidden"> <!-- Agregamos la clase 'overflow-hidden' para que la imagen no se salga del contenedor -->
-                <img class="w-full h-96 object-cover" src="/storage/{{ $post->image_url }}" alt="Post Image"> <!-- Ajustamos la clase 'h-96' para establecer la altura deseada de la imagen -->
+            <div class="bg-white dark:bg-gray-900 rounded-lg shadow-lg overflow-hidden"> 
+                <img class="w-full h-96 object-cover" src="/storage/{{ $post->image_url }}" alt="Post Image"> 
                 <div class="p-6">
                     <h2 class="text-2xl font-semibold text-gray-900 dark:text-white">{{ $post->title }}</h2>
                     @if ($post->user)

@@ -1,6 +1,32 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
 
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+body {
+    background-color: #00001a ;
+}
+.footer-c {
+ 
+ background-color: #151C36;
 
+}
+.nav-master {
+    background-color: #151C36;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 1000; 
+    }
+
+.all-posts {
+   margin-top: 100px;
+   margin-bottom: 100px;
+   background-color: #00001a;
+}
+
+.posts-contenedor {
+    background-color: #0c0c22;
+}
 
